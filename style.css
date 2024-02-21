@@ -1,0 +1,23 @@
+.logo{
+    background-color: black;
+    color: azure;
+    cursor: pointer;
+}
+body{
+    background-color: black;
+}
+nav li{
+    margin: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+*{
+    margin: 0;
+    padding: 0%;
+
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
