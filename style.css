@@ -16,24 +16,26 @@ header{
     align-items: center;
     padding-left: 5px;
     margin: 0% 0%;
-    border-radius: 12px;
+    border-radius: 8px;
     justify-content: space-between;
+    
 }
 
 nav ul li{
     float: left;
-    padding: 12px 20px;
+    padding: 15px 12px;
     list-style: none;
     margin-bottom: 18px;
 }
 
 
 header ul li a{
-  color:aliceblue;
+  color:rgb(199, 199, 199);
   text-decoration: none;
 }
 nav ul li a:hover{
   color: #2955bd;
+  
 }
 
  header div button {
@@ -132,6 +134,17 @@ header button:hover {
 }
 .box .product h5{
   color: #f6f6f6;
+}
+.box .product:hover{
+  box-shadow: 0 3px 6px rgb(0, 0, 0,0.16),
+  0 3px 6px rgb(0, 0, 0, 0.23);
+  transform: translate(0px, -8px);
+}
+
+.box .product .cart{
+  background-color: #2955bd;
+
+
 }
 
 
