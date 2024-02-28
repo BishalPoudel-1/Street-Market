@@ -13,6 +13,7 @@ body{
 /*Header*/
 header{
     display: flex;
+    width: 100%;
     background-color: rgb(0, 0, 0);
     align-items: center;
     padding-left: 5px;
@@ -28,6 +29,7 @@ nav ul li{
     list-style: none;
     margin-bottom: 18px;
 }
+
 
 
 header ul li a{
@@ -55,6 +57,27 @@ nav ul li a:hover{
 
 header button:hover {
     background-color: #2955bd; 
+}
+
+
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  nav ul li {
+      
+      margin-bottom: 10px;
+  }
+  header div button {
+      margin: 10px 0;
+  }
+  .search {
+    flex-direction: row;
+    align-items: flex-start;
+}
 }
 
 
@@ -107,6 +130,10 @@ header button:hover {
   font-family: "Open Sans", sans-serif;
 }
 
+
+
+
+
 /*product*/
 .box{
   display: grid;
@@ -114,11 +141,8 @@ header button:hover {
   gap: 12px;
   background-color:transparent;
   position: relative;
-  
-
-
-  
 }
+
 .box .product{
   height: auto;
   margin-left: 12px;
