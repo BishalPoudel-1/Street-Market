@@ -32,6 +32,7 @@ nav ul li{
 
 
 
+
 header ul li a{
   color:rgb(199, 199, 199);
   text-decoration: none;
@@ -115,9 +116,15 @@ header button:hover {
   font-family: "Open Sans", sans-serif;
   color: rgb(210, 210, 210);
 }
+#cart{
+  height: 24px;
+  width: 24px;
+  color: #f6f6f6;
+}
 
 .search input{
   background-color: rgb(59, 59, 59);
+  color: #f6f6f6;
   margin-left:20px;
   max-width: 750px;
   width: 300px;
@@ -131,6 +138,32 @@ header button:hover {
 }
 
 
+/* filter*/
+.filter{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+.filter button{
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.134);
+  cursor: pointer;
+  padding: 3px 20px;
+  margin-right: 10px;
+  margin-left: 2px;
+  border: 10; 
+  border-color: blue;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+
+.filter button:hover {
+  background-color: #2955bd; 
+}
+.filter button.active{
+  background-color: #2955bd; 
+}
 
 
 
@@ -169,6 +202,12 @@ header button:hover {
   text-align: left;
 }
 
+.box .product h6{
+
+  color: #f6f6f6;
+  text-align: center;
+}
+
 .box .product #btn{
   background-color: #5e79b6;
   border-radius: 10%;
@@ -180,18 +219,20 @@ header button:hover {
   transform: translate(0px, -8px);
 }
 
-.box .product .cart{
-  background-color: #2955bd;
 
-
+.box .product .but{
+  display: flex;
+  justify-content: center;
+  margin-right: 15px;
+  
 }
 
-
-
-
 .box .product .glow-on-hover {
-  margin-top: 10%;
+  margin-top: 1px;
   height: 40px;
+  width: 100px;
+  margin-left: 12px;
+  margin-bottom: 10px;
   border: none;
   outline: none;
   color: #fff;
