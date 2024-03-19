@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+body{
+    background-color: rgb(12, 12, 12);
+}
+
+
+
+
+/*Header*/
+header{
+    display: flex;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    padding-left: 5px;
+    margin: 0% 0%;
+    border-radius: 8px;
+    justify-content: space-between;
+    
+}
+
+nav ul li{
+    float: left;
+    padding: 15px 12px;
+    list-style: none;
+    margin-bottom: 18px;
+}
+
+
+
+
+header ul li a{
+  color:rgb(199, 199, 199);
+  text-decoration: none;
+}
+nav ul li a:hover{
+  color: #2955bd;
+  
+}
+
+ header div button {
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 12px 20px;
+    margin-right: 12px;
+    margin-left: 10px;
+    border: 10; 
+    border-color: blue;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+header button:hover {
+    background-color: #2955bd; 
+}
+
+
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  nav ul li {
+      
+      margin-bottom: 10px;
+  }
+  header div button {
+      margin: 10px 0;
+  }
+  .search {
+    flex-direction: row;
+    align-items: flex-start;
+}
+}
+
+
+
+.map-container {
+    border-radius: 12px;
+    height: 600px; /* Adjust height as needed */
+    width: 800px; /* Adjust width as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(43, 42, 42, 0.551);
+}
+
+.loc {
+    position: absolute;
+    top: 30px;
+    
+}
+
+.icons {
+    position: absolute;
+    bottom: 1%;
+    left: 30%;
+    transform: translateX(-50%);
+    padding: 1px; /* Add padding for better readability */
+    border-radius: 4px; /* Add border-radius for rounded corners */
+    color: #ffffff; /* Set text color */
+    font-family: Arial, sans-serif; /* Set font family */
+    font-size: 16px; /* Set font size */
+     /* Align text to the center */
+     font-weight: bold;
+}
+
+
+iframe{
+    border-radius: 3%;
+    
+}
+#head {
+    position: absolute;
+    top: 120px;
+    left: 400px;
+    background-color: #ffffff00;
+    color: #fff; /* Set text color */
+    padding: 10px;
+}
+
+

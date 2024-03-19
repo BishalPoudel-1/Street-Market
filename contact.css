@@ -87,7 +87,7 @@ body .container {
     margin-right: auto;
     margin-left: auto;
     padding: none;
-    margin-top: 4%;
+    margin-top: 1%;
     width: 90%;
     max-width: 900px;
     height:550px;
@@ -95,12 +95,69 @@ body .container {
     border-radius: 1rem;
     position: relative;
 }
-.all{
+
+.all {
     position: absolute;
-    left: 4%;
-    top: 4%;
+    left: 30%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Set text color */
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px; /* Add margin below h2 element */
+}
+h4{
+    position: absolute;
+    left: 52%;
+    top: 70%;
+    color: #f0f0f0;
+    font-weight: bold;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent background to form */
+    padding: 20px; /* Add padding to form */
+    border-radius: 10px; /* Add border radius to form */
+}
+
+label {
+    color: #fff; /* Set label text color */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Set input and textarea width to 100% */
+    padding: 10px; /* Add padding to input and textarea */
+    margin-bottom: 10px; /* Add margin below input and textarea */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    background-color: #f0f0f0; /* Set background color */
+}
+
+#button {
+    background-color: #2955bd; /* Set button background color */
+    color: #fff; /* Set button text color */
+    padding: 10px 20px; /* Add padding to button */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius to button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Add transition effect to button background color */
+}
+
+#button:hover {
+    background-color: #1e3c87; /* Change button background color on hover */
+}
+
+h1{
+    color: #f0f0f0;
+    margin-left: 19%;
+    
 
 }
+
 
 
 
