@@ -10,6 +10,77 @@
 body{
     background-color: rgb(12, 12, 12);
 }
+
+.search {
+  position: relative; /* Make the search container relative */
+}
+
+#cart-container {
+  position: fixed;
+  top: 50%; /* Move the popup to the vertical center */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center horizontally and vertically */
+  width: 90%; /* Set the width to cover 80% of the display */
+  max-width: 800px; /* Maximum width of the popup */
+  background-color: rgba(255, 240, 240, 0.861); /* Semi-transparent white background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-height: 80vh; /* Adjusted height to 80% of the viewport height */
+  overflow: auto;
+  display: none;
+  z-index: 1000; /* Ensure the popup is on top of other elements */
+}
+#head{
+  color: #000;
+  font-size: 18px; /* Increased font size for product names */
+   margin: 0; 
+}
+.cart-content {
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+#cart-items {
+  margin-top: 20px;
+}
+
+.products {
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.products img {
+  width: 200px;
+  height: 200px;
+  margin-right: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Header*/
 header{
     display: flex;

@@ -35,12 +35,24 @@
     </header>
     
 
+
     <div class="search">
         <H1>Products</H1>
-        <input type="text" placeholder="Search the products"  id="input">
-        <button id="btn"><i class="fa-solid fa-magnifying-glass"></i>  Search</button>
-        <button><i class="fa-solid fa-cart-shopping"></i></button>
+        <input type="text" placeholder="Search the products" id="input">
+        <button id="btn"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+        <button id="cart-btn" style="position: relative;"><i class="fa-solid fa-cart-shopping"></i></button>
+
+        <div id="cart-container" class="cart-popup">
+            <div class="cart-content">
+                <span class="close" onclick="toggleCart()">&times;</span>
+                <h1 id="head">Shopping Cart</h1>
+                <div id="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </div>
+            </div>
+        </div>
     </div>
+
 
 
     
@@ -56,231 +68,315 @@
         <div class="box">
            
             
-            <div class="product clothes">
-                <h5>Jacket</h5>  
+            <div class="product clothes" onclick="addToCart('Jacket', 'Image/jackets.png', 'Rs200')">
+                <h5>Jacket</h5>
                 <img src="Image/jackets.png" id="p1">
                 <h6>Price: Rs200 </h6>
                 <div class="but">
-                <button class="glow-on-hover">Add to Cart</button>      
-                <button class="glow-on-hover">Compare</button>  
-            </div>     
-            
+                    <button class="glow-on-hover">Add to Cart</button>
+                    <button class="glow-on-hover">Compare</button>
+                </div>
+            </div>
+
+<!-- Product 2 -->
+<div class="product clothes" onclick="addToCart('Girl Dress', 'Image/dreess girl.png', 'Rs200')">
+    <h5>Girl dress</h5>
+    <img src="Image/dreess girl.png" id="p2">
+    <h6>Price: Rs200</h6>
+    <div class="but">
+        <button class="glow-on-hover">Add to Cart</button>
+        <button class="glow-on-hover">Compare</button>
+    </div>
+</div>
+
+<!-- Product 3 -->
+<div class="product fruit" onclick="addToCart('Pineapple', 'Image/pinaapple.png', 'Rs200')">
+    <h5>Pineapple</h5>
+    <img src="Image/pinaapple.png" id="p3">
+    <h6>Price: Rs200</h6>
+    <div class="but">
+        <button class="glow-on-hover">Add to Cart</button>
+        <button class="glow-on-hover">Compare</button>
+    </div>
+</div>
+
+<!-- Product 4 -->
+<div class="product vegetable" onclick="addToCart('Tomato', 'Image/tomato.png', 'Rs200')">
+    <h5>Tomato</h5>
+    <img src="Image/tomato.png" id="p4">
+    <h6>Price: Rs200</h6>
+    <div class="but">
+        <button class="glow-on-hover">Add to Cart</button>
+        <button class="glow-on-hover">Compare</button>
+    </div>
+</div>
+<!-- Product 5 -->
+<div class="product clothes" onclick="addToCart('T-shirt', 'Image/tshirt.png', 'Rs200')">
+    <h5>T-shirt</h5>
+    <img src="Image/tshirt.png" id="p5">
+    <h6>Price: Rs200</h6>
+    <div class="but">
+        <button class="glow-on-hover">Add to Cart</button>
+        <button class="glow-on-hover">Compare</button>
+    </div>
+</div>
+
+<!-- Product 6 -->
+<div class="product clothes" onclick="addToCart('Hoodie', 'Image/white hoodie.png', 'Rs200')">
+    <h5>Hoodie</h5>
+    <img src="Image/white hoodie.png" id="p6">
+    <h6>Price: Rs200</h6>
+    <div class="but">
+        <button class="glow-on-hover">Add to Cart</button>
+        <button class="glow-on-hover">Compare</button>
+    </div>
+</div>
+
+<!-- Product 7 -->
+<div class="product clothes" onclick="addToCart('Full T-shirt', 'Image/full tshirt.png', 'Rs200')">
+    <h5>Full T-shirt</h5>
+    <img src="Image/full tshirt.png" id="p7">
+    <h6>Price: Rs200</h6>
+    <div class="but">
+        <button class="glow-on-hover">Add to Cart</button>
+        <button class="glow-on-hover">Compare</button>
+    </div>
+</div>
+
+<!-- Product 5 -->
+<div class="product fruit" onclick="addToCart('Mango', 'Image/mango.png', 'Rs200')">
+    <h5>Mango</h5>
+    <img src="Image/mango.png" id="p5">
+    <h6>Price: Rs200</h6>
+    <div class="but">
+        <button class="glow-on-hover">Add to Cart</button>
+        <button class="glow-on-hover">Compare</button>
+    </div>
+</div>
+
+<!-- Product 6 -->
+<div class="product fruit" onclick="addToCart('Orange', 'Image/orange.png', 'Rs200')">
+    <h5>Orange</h5>
+    <img src="Image/orange.png" id="p6">
+    <h6>Price: Rs200</h6>
+    <div class="but">
+        <button class="glow-on-hover">Add to Cart</button>
+        <button class="glow-on-hover">Compare</button>
+    </div>
+</div>
+
+<!-- Product 7 -->
+<div class="product fruit" onclick="addToCart('Banana', 'Image/banana.png', 'Rs200')">
+    <h5>Banana</h5>
+    <img src="Image/banana.png" id="p7">
+    <h6>Price: Rs200</h6>
+    <div class="but">
+        <button class="glow-on-hover">Add to Cart</button>
+        <button class="glow-on-hover">Compare</button>
+    </div>
+</div>
+
+<!-- Product 8 -->
+<div class="product vegetable" onclick="addToCart('Red Chili', 'Image/red-chili-pepper.png', 'Rs200')">
+    <h5>Red Chili</h5>
+    <img src="Image/red-chili-pepper.png" id="p8">
+    <h6>Price: Rs200</h6>
+    <div class="but">
+        <button class="glow-on-hover">Add to Cart</button>
+        <button class="glow-on-hover">Compare</button>
+    </div>
+</div>
+
+<!-- Product 9 -->
+<div class="product vegetable" onclick="addToCart('Potato', 'Image/potato.png', 'Rs200')">
+    <h5>Potato</h5>
+    <img src="Image/potato.png" id="p9">
+    <h6>Price: Rs200</h6>
+    <div class="but">
+        <button class="glow-on-hover">Add to Cart</button>
+        <button class="glow-on-hover">Compare</button>
+    </div>
+</div>
+
+<!-- Product 10 -->
+<div class="product vegetable" onclick="addToCart('Corn', 'Image/corn.png', 'Rs200')">
+    <h5>Corn</h5>
+    <img src="Image/corn.png" id="p10">
+    <h6>Price: Rs200</h6>
+    <div class="but">
+        <button class="glow-on-hover">Add to Cart</button>
+        <button class="glow-on-hover">Compare</button>
+    </div>
+</div>
+
+<!-- Product 11 -->
+<div class="product vegetable" onclick="addToCart('Cabbage', 'Image/cabbage.png', 'Rs200')">
+    <h5>Cabbage</h5>
+    <img src="Image/cabbage.png" id="p11">
+    <h6>Price: Rs200</h6>
+    <div class="but">
+        <button class="glow-on-hover">Add to Cart</button>
+        <button class="glow-on-hover">Compare</button>
+    </div>
+</div>
+
+<!-- Product 12 -->
+<div class="product vegetable" onclick="addToCart('Pumpkin', 'Image/pumpkin.png', 'Rs200')">
+    <h5>Pumpkin</h5>
+    <img src="Image/pumpkin.png" id="p12">
+    <h6>Price: Rs200</h6>
+    <div class="but">
+        <button class="glow-on-hover">Add to Cart</button>
+        <button class="glow-on-hover">Compare</button>
+    </div>
+</div>
+
+<!-- Product 13 -->
+<div class="product vegetable" onclick="addToCart('Onion', 'Image/onion.png', 'Rs200')">
+    <h5>Onion</h5>
+    <img src="Image/onion.png" id="p13">
+    <h6>Price: Rs200</h6>
+    <div class="but">
+        <button class="glow-on-hover">Add to Cart</button>
+        <button class="glow-on-hover">Compare</button>
+    </div>
+</div>
+
+<!-- Product 14 -->
+<div class="product vegetable" onclick="addToCart('Cauliflower', 'Image/cauliflower.png', 'Rs200')">
+    <h5>Cauliflower</h5>
+    <img src="Image/cauliflower.png" id="p14">
+    <h6>Price: Rs200</h6>
+    <div class="but">
+        <button class="glow-on-hover">Add to Cart</button>
+        <button class="glow-on-hover">Compare</button>
+    </div>
+</div>
+
+<!-- Product 15 -->
+<div class="product vegetable" onclick="addToCart('Green Pepper', 'Image/green-pepper.png', 'Rs200')">
+    <h5>Green Pepper</h5>
+    <img src="Image/green-pepper.png" id="p15">
+    <h6>Price: Rs200</h6>
+    <div class="but">
+        <button class="glow-on-hover">Add to Cart</button>
+        <button class="glow-on-hover">Compare</button>
+    </div>
+</div>
+
+      <!-- Product 16 -->
+<div class="product clothes" onclick="addToCart('Nike 360', 'Image/nike-shoes.png', 'Rs200')">
+    <h5>Nike 360</h5>
+    <img src="Image/nike-shoes.png" id="p16">
+    <h6>Price: Rs200</h6>
+    <div class="but">
+        <button class="glow-on-hover">Add to Cart</button>
+        <button class="glow-on-hover">Compare</button>
+    </div>
+</div>
+
+<!-- Product 17 -->
+<div class="product clothes" onclick="addToCart('Hat', 'Image/hat.png', 'Rs200')">
+    <h5>Hat</h5>
+    <img src="Image/hat.png" id="p17">
+    <h6>Price: Rs200</h6>
+    <div class="but">
+        <button class="glow-on-hover">Add to Cart</button>
+        <button class="glow-on-hover">Compare</button>
+    </div>
+</div>
+
+<!-- Product 18 -->
+<div class="product fruit" onclick="addToCart('Papaya', 'Image/papaya.png', 'Rs200')">
+    <h5>Papaya</h5>
+    <img src="Image/papaya.png" id="p18">
+    <h6>Price: Rs200</h6>
+    <div class="but">
+        <button class="glow-on-hover">Add to Cart</button>
+        <button class="glow-on-hover">Compare</button>
+    </div>
+</div>
+
+<!-- Product 19 -->
+<div class="product fruit" onclick="addToCart('Green Grapes', 'Image/green grapes.png', 'Rs200')">
+    <h5>Green Grapes</h5>
+    <img src="Image/green grapes.png" id="p19">
+    <h6>Price: Rs200</h6>
+    <div class="but">
+        <button class="glow-on-hover">Add to Cart</button>
+        <button class="glow-on-hover">Compare</button>
+    </div>
+</div>
         </div>
 
-            <div class="product clothes">
-                <h5>Girl dress</h5>
-                <img src="Image/dreess girl.png" id="p2">
-                <h6>Price: Rs200 </h6>
-                <div class="but">
-                    <button class="glow-on-hover">Add to Cart</button>      
-                    <button class="glow-on-hover">Compare</button>  
-                </div> 
-            </div>
-
-            <div class="product fruit">
-                <h5>Pineapple</h5>
-                <img src="Image/pinaapple.png" id="p3">
-                <h6>Price: Rs200 </h6>
-                <div class="but">
-                    <button class="glow-on-hover">Add to Cart</button>      
-                    <button class="glow-on-hover">Compare</button>  
-                </div> 
-            </div>
-
-            <div class="product vegetable">
-                <h5>Tomato</h5>
-                <img src="Image/tomato.png" id="p4">
-                <h6>Price: Rs200 </h6>
-                <div class="but">
-                    <button class="glow-on-hover">Add to Cart</button>      
-                    <button class="glow-on-hover">Compare</button>  
-                </div> 
-            </div>
-
-            <div class="product clothes">
-                <h5>T-shirt</h5>
-                <img src="Image/tshirt.png" id="p5">
-                <h6>Price: Rs200 </h6>
-                <div class="but">
-                    <button class="glow-on-hover">Add to Cart</button>      
-                    <button class="glow-on-hover">Compare</button>  
-                </div> 
-            </div>
-
-            <div class="product clothes">
-                <h5>Hoodie</h5>
-                <img src="Image/white hoodie.png" id="p6">
-                <h6>Price: Rs200 </h6>
-                <div class="but">
-                    <button class="glow-on-hover">Add to Cart</button>      
-                    <button class="glow-on-hover">Compare</button>  
-                </div> 
-            </div>
-
-            <div class="product clothes">
-                <h5>Full T-shirt</h5>
-                <img src="Image/full tshirt.png" id="p6">
-                <h6>Price: Rs200 </h6>
-                <div class="but">
-                    <button class="glow-on-hover">Add to Cart</button>      
-                    <button class="glow-on-hover">Compare</button>  
-                </div> 
-            </div>   
-
-            <div class="product fruit">
-                <h5>Mango</h5>
-                <img src="Image/mango.png" id="p6">
-                <h6>Price: Rs200 </h6>
-                <div class="but">
-                    <button class="glow-on-hover">Add to Cart</button>      
-                    <button class="glow-on-hover">Compare</button>  
-                </div> 
-            </div> 
-
-            <div class="product fruit">
-                <h5>Orange</h5>
-                <img src="Image/orange.png" id="p6">
-                <h6>Price: Rs200 </h6>
-                <div class="but">
-                    <button class="glow-on-hover">Add to Cart</button>      
-                    <button class="glow-on-hover">Compare</button>  
-                </div> 
-            </div> 
-            <div class="product fruit">
-                <h5>Banana</h5>
-                <img src="Image/banana.png" id="p6">
-                <h6>Price: Rs200 </h6>
-                <div class="but">
-                    <button class="glow-on-hover">Add to Cart</button>      
-                    <button class="glow-on-hover">Compare</button>  
-                </div> 
-            </div> 
 
 
+        <script>
+        // Function to toggle cart visibility and show as a popup
+        function toggleCart() {
+            const cartContainer = document.getElementById('cart-container');
+            if (cartContainer.style.display === 'none' || cartContainer.style.display === '') {
+                cartContainer.style.display = 'block';
+                updateCartDisplay();
+            } else {
+                cartContainer.style.display = 'none';
+            }
+        }
 
-            <div class="product vegetable">
-                <h5>Red Chili</h5>
-                <img src="Image/red-chili-pepper.png" id="p6">
-                <h6>Price: Rs200 </h6>
-                <div class="but">
-                    <button class="glow-on-hover">Add to Cart</button>      
-                    <button class="glow-on-hover">Compare</button>  
-                </div> 
-            </div> 
+        // Event listener for the cart button
+        document.getElementById('cart-btn').addEventListener('click', toggleCart);
 
-            <div class="product vegetable">
-                <h5>Potato</h5>
-                <img src="Image/potato.png" id="p6">
-                <h6>Price: Rs200 </h6>
-                <div class="but">
-                    <button class="glow-on-hover">Add to Cart</button>      
-                    <button class="glow-on-hover">Compare</button>  
-                </div> 
-            </div> 
+        // Function to add a product to the cart
+        function addToCart(productName, imageUrl, price) {
+            console.log("Adding product to cart: " + productName);
 
-            <div class="product vegetable">
-                <h5>Corn</h5>
-                <img src="Image/corn.png" id="p6">
-                <h6>Price: Rs200 </h6>
-                <div class="but">
-                    <button class="glow-on-hover">Add to Cart</button>      
-                    <button class="glow-on-hover">Compare</button>  
-                </div> 
-            </div> 
+            // Retrieve existing cart items from localStorage or initialize an empty array
+            let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
-            <div class="product vegetable">
-                <h5>Cabbage</h5>
-                <img src="Image/cabbage.png" id="p6">
-                <h6>Price: Rs200 </h6>
-                <div class="but">
-                    <button class="glow-on-hover">Add to Cart</button>      
-                    <button class="glow-on-hover">Compare</button>  
-                </div> 
-            </div> 
+            // Add the product to the cart items array
+            cartItems.push({ name: productName, image: imageUrl, price: price });
 
-            <div class="product vegetable">
-                <h5>Pumpkin</h5>
-                <img src="Image/pumpkin.png" id="p6">
-                <h6>Price: Rs200 </h6>
-                <div class="but">
-                    <button class="glow-on-hover">Add to Cart</button>      
-                    <button class="glow-on-hover">Compare</button>  
-                </div> 
-            </div> 
+            // Save the updated cart items back to localStorage
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
-            <div class="product vegetable">
-                <h5>Onion</h5>
-                <img src="Image/onion.png" id="p6">
-                <h6>Price: Rs200 </h6>
-                <div class="but">
-                    <button class="glow-on-hover">Add to Cart</button>      
-                    <button class="glow-on-hover">Compare</button>  
-                </div> 
-            </div> 
+            // Update the cart display
+            updateCartDisplay();
+        }
 
-            <div class="product vegetable">
-                <h5>Cauliflower</h5>
-                <img src="Image/cauliflower.png" id="p6">
-                <h6>Price: Rs200 </h6>
-                <div class="but">
-                    <button class="glow-on-hover">Add to Cart</button>      
-                    <button class="glow-on-hover">Compare</button>  
-                </div> 
-            </div> 
+        // Function to update the cart display
+        function updateCartDisplay() {
+            console.log("Updating cart display");
 
-            <div class="product vegetable">
-                <h5>Green Pepper</h5>
-                <img src="Image/green-pepper.png" id="p6">
-                <h6>Price: Rs200 </h6>
-                <div class="but">
-                    <button class="glow-on-hover">Add to Cart</button>      
-                    <button class="glow-on-hover">Compare</button>  
-                </div> 
-            </div> 
+            const cartItemsContainer = document.getElementById('cart-items');
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
-            <div class="product clothes">
-                <h5>Nike 360</h5>
-                <img src="Image/nike-shoes.png" id="p6">
-                <h6>Price: Rs200 </h6>
-                <div class="but">
-                    <button class="glow-on-hover">Add to Cart</button>      
-                    <button class="glow-on-hover">Compare</button>  
-                </div> 
-            </div> 
+            // Clear the previous content
+            cartItemsContainer.innerHTML = '';
 
-
-
-
-            <div class="product clothes">
-                <h5>Hat</h5>
-                <img src="Image/hat.png" id="p6">
-                <h6>Price: Rs200 </h6>
-                <div class="but">
-                    <button class="glow-on-hover">Add to Cart</button>      
-                    <button class="glow-on-hover">Compare</button>  
-                </div> 
-            </div> 
-            <div class="product fruit">
-                <h5>Hat</h5>
-                <img src="Image/papaya.png" id="p6">
-                <h6>Price: Rs200 </h6>
-                <div class="but">
-                    <button class="glow-on-hover">Add to Cart</button>      
-                    <button class="glow-on-hover">Compare</button>  
-                </div> 
-            </div> 
-
-            <div class="product fruit">
-                <h5>Hat</h5>
-                <img src="Image/green grapes.png" id="p6">
-                <h6>Price: Rs200 </h6>
-                <div class="but">
-                    <button class="glow-on-hover">Add to Cart</button>      
-                    <button class="glow-on-hover">Compare</button>  
-                </div> 
-            </div> 
-
-        </div>
+            // Populate the cart with the updated items
+            cartItems.forEach(item => {
+                const productDiv = document.createElement('div');
+                productDiv.className = "products";
+                const image = document.createElement('img');
+                image.src = item.image;
+                const name = document.createElement('h5');
+                name.textContent = item.name;
+                const price = document.createElement('h6');
+                price.textContent = "Price: " + item.price;
+                productDiv.appendChild(name);
+                productDiv.appendChild(image);
+                productDiv.appendChild(price);
+                cartItemsContainer.appendChild(productDiv);
+            });
+        }
+        document.addEventListener('click', function(event) {
+            var cartContainer = document.getElementById('cart-container');
+            var cartButton = document.getElementById('cart-btn');
+            if (!cartContainer.contains(event.target) && !cartButton.contains(event.target)) {
+                cartContainer.style.display = 'none';
+            }
+        });
+    </script>
 
     
 </body>
