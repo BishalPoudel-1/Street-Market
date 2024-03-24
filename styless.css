@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding: 0;
+  }
+  .back{
+      background-image: url(str.jpg);
+      background-size:cover; 
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 60vh;
+      display: flex;
+      justify-content:flex-end;
+      align-items: center;
+      padding-right: 20px;
+  }
+  .hero{
+      display: flex;
+      flex-direction:column;
+      width:45%;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #3D3D3D;
+      border-radius: 25px;
+      background-color: rgba(61, 61, 61, 0.8);;
+      color: white;
+  }
+  .hero button{
+      color: white;
+      background-color: black;
+      border-radius: 25px;
+      padding-left:20px;
+      padding-right: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      border-color:orange;
+  }
+  #name{
+      border-radius:10px;
+      padding: 10px;
+      width:100%;
+      height:10px;
+      border-color: orange;
+  }
+  #name:hover{
+      border-color:green;
+  }
+  .hero button:hover{
+      background-color:white;
+      color: black;
+      border-color: green;
+  }
+  .selection{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+  }
+  .okay{
+      width: 20%;
+      display: flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items: center;
+  }
+  
+  .pineapple{
+      background-color: #3D3D3D;
+      margin-top: 100px;
+      margin-left: 50px;
+      justify-content: center;
+      align-items:center;
+      margin-bottom: 20px;
+      padding-left: 50px;
+      padding-right: 50px;
+      border-radius: 10px;
+      border-color: #3D3D3D;
+  
+  }
+  .selection{
+      justify-content: center;
+      align-items: center;
+      gap:50px;
+  }
+  .overal{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    
+  }
+  .overal button{
+  color: white;
+  border-radius: 25px;
+  border-color: blue;
+  background-color: black;
+  padding-left: 20px;
+  padding-right:20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+  .overal h1{
+      color: white;
+  }
+  .wedo{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      gap: 70px;
+      
+  }
+  .we{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      
+  }
+  .direction{
+    background-color: #3D3D3D;
+    margin-top: 100px;
+    margin-left: 50px;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-color: #3D3D3D;
+  }
+  
+  .nice{
+    width: 20%;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+  }
+    .chotu{
+      background-color: black;
+      width: 100vw;
+      height: 100vh;
+    }
+  
+    H1{
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    align-items: center;
+    line-height: 100px;
+    }
