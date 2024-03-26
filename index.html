@@ -29,8 +29,8 @@
             <button onclick="button()" class="logout"><i class="fa-solid fa-user"></i> logout</button>
             </div>
         <div id="myModal" class="btn">
-        <a class="Login" href="signin.html"><button><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</button></a>
-        <a class="Logup" href="signup.html"><button><i class="fa-solid fa-arrow-right-to-bracket fa-flip-horizontal"></i> Logup</button></a>
+        <a class="Login" href="signin.html"><button><i class="fa-solid fa-arrow-right-to-bracket"></i> Sign in</button></a>
+        <a class="Logup" href="signup.html"><button><i class="fa-solid fa-arrow-right-to-bracket fa-flip-horizontal"></i> Sign up</button></a>
         </div>
 
     </header>
@@ -120,7 +120,7 @@ if (success === "true") { // <-- Check against string "true"
     modal.style.display = "none";
     bb.style.display = ""; // Show the button
 } else {
-    modal.style.display = "grid"; // Show the modal
+    modal.style.display = ""; // Show the modal
     bb.style.display = "none"; // Hide the button
 }
 
