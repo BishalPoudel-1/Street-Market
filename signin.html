@@ -16,6 +16,7 @@
 
 
     <header>
+        
         <div class="logo">
             <img class="Image" src="Image/Logo.png">
           </div>
@@ -40,6 +41,7 @@
 
 
     <div class="container">  
+        <form id="signinForm" >
         <div class="pic">
             <h2>Welcome Back</h2>
             <img src="Image/login.png"  alt="Welcome Back Image">
@@ -61,9 +63,48 @@
             <button>Sign In</button>
             <p>Don't you have an account? <a  href="signup.html">Sign up</a></p>
         </div>
+    </form>
 
     </div>
     </div>
+
+    <script>
+        document.getElementById("signinForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Retrieve email and password fields
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        
+
+        // Validate email and password
+        if (validateEmail(email) && validatePassword(password)) {
+            // If valid, proceed with sign-in process
+            // For demonstration, let's alert a success message
+            var success=true;
+            localStorage.setItem("Status", success);
+            alert(success);
+            window.location.href = "product.html?signin=success";
+            // Here you can add code to handle actual sign-in process, like redirecting to a dashboard or another page
+        } else {
+            // If invalid, display error message
+            alert("Invalid email or password. Please check your credentials.");
+        }
+    });
+
+    // Function to validate email
+    function validateEmail(email) {
+        // Basic email validation regex pattern
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailPattern.test(email);
+    }
+
+    // Function to validate password
+    function validatePassword(password) {
+        // Basic password validation: at least 8 characters
+        return password.length >= 8;
+    }
+    </script>
 </body>
 
 </html>

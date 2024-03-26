@@ -28,11 +28,15 @@
                 <li><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact us</a></li>
             </ul>
         </nav>
-        
-        <div class="btn">
-        <a class="Login" href="signin.html"><button><i class="fa-solid fa-arrow-right-to-bracket"></i> Sign in</button></a>
+        <div id="Account" class="btn">
+            <button onclick="button()" class="logout"><i class="fa-solid fa-user"></i> logout</button>
+            </div>
+
+        <div id="myModal" class="btn">
+        <a class="Login" href="signin.html"><button><i class="fa-solid fa-arrow-right-to-bracket"></i>  Sign in</button></a>
         <a class="Logup" href="signup.html"><button><i class="fa-solid fa-arrow-right-to-bracket fa-flip-horizontal"></i> Sign up</button></a>
         </div>
+
 
     </header>
     <div class="map-container">
@@ -44,6 +48,27 @@
             <p1>Market location Symbol: <i class="fa-solid fa-shop fa-xl"></i></p1>
         </div>
     </div>
+    <script>
+
+var success = localStorage.getItem('Status');
+var modal = document.getElementById("myModal");
+var bb = document.getElementById("Account");
+if (success === "true") { // <-- Check against string "true"
+    modal.style.display = "none";
+    bb.style.display = ""; // Show the button
+} else {
+    modal.style.display = "grid"; // Show the modal
+    bb.style.display = "none"; // Hide the button
+}
+
+
+function button(){
+    localStorage.setItem("Status", "false");
+    window.location.reload();
+
+}
+    </script>
+    
     
 </body>
 </html>

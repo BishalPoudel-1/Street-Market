@@ -26,8 +26,11 @@
                 <li><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact us</a></li>
             </ul>
         </nav>
-        
-        <div class="btn">
+        <div id="Account" class="btn">
+            <button onclick="button()" class="logout"><i class="fa-solid fa-user"></i> logout</button>
+            </div>
+
+        <div id="myModal" class="btn">
         <a class="Login" href="signin.html"><button><i class="fa-solid fa-arrow-right-to-bracket"></i> Sign in</button></a>
         <a class="Logup" href="signup.html"><button><i class="fa-solid fa-arrow-right-to-bracket fa-flip-horizontal"></i> Sign up</button></a>
         </div>
@@ -42,7 +45,8 @@
             <div class="all">
             <h2>Get in touch</h2>
             
-            <form action="#" method="post">
+            <form action="https://api.web3forms.com/submit"  method="post">
+                <input type="hidden" name="access_key" value="a862d7ef-1d50-47b9-a06e-5e404f959da5">
                     <label for="name">Name:</label><br>
                     <input type="text" id="name" name="name" required>
         
@@ -59,6 +63,26 @@
         <h4>We are here for you! How can we help?</h4>
           </div>
            
-    
+    <script>
+        
+var success = localStorage.getItem('Status');
+var modal = document.getElementById("myModal");
+var bb = document.getElementById("Account");
+if (success === "true") { // <-- Check against string "true"
+    modal.style.display = "none";
+    bb.style.display = ""; // Show the button
+} else {
+    modal.style.display = "grid"; // Show the modal
+    bb.style.display = "none"; // Hide the button
+}
+
+
+function button(){
+    localStorage.setItem("Status", "false");
+    window.location.reload();
+
+}
+
+    </script>
 </body>
 </html>

@@ -10,6 +10,9 @@
 body{
     background-color: rgb(12, 12, 12);
 }
+::-webkit-scrollbar{
+  display: none;
+}
 
 .search {
   position: relative; /* Make the search container relative */
