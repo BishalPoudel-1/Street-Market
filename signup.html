@@ -86,17 +86,8 @@
             localStorage.setItem("signupCount", signupCount);
             alert("Signup successful!");
 
-            // Display all email and password pairs in an alert
-            var allData = "All Signup Data:\n";
-            for (var i = 1; i <= signupCount; i++) {
-                var savedEmail = localStorage.getItem("email_" + i);
-                var savedPassword = localStorage.getItem("password_" + i);
-                allData += "Email: " + savedEmail + ", Password: " + savedPassword + "\n";
-            }
-            alert(allData);
-
             // Redirect to signup page
-            window.location.href = "signup.html";
+            window.location.href = "signin.html";
         } else {
             alert("Sorry, your browser does not support Web Storage. Please try a different browser.");
         }
