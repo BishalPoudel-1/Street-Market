@@ -374,8 +374,8 @@
         <h2 id="popup-title">Product Comparison</h2>
         <img id="popup-image" src="" alt="Product Image" style="max-width: 200px; max-height: 200px;">
         <p id="popup-content">Comparison details for Jacket will be shown here.</p>
-        <h6 id="banashwor-price">Price in Banashwor: </h6>
-        <h6 id="koteshwor-price">Price in Koteshwor: </h6>
+        <h6 id="banashwor-price">Average Price in Banashwor: </h6>
+        <h6 id="koteshwor-price">Average Price in Koteshwor: </h6>
     </div>
 
     <!-- Overlay -->
@@ -458,8 +458,8 @@
             // Set the title, image, and content of the popup based on the product
             document.getElementById("popup-title").innerText = "Comparison for " + productName;
             document.getElementById("popup-content").innerText = "Comparison details for " + productName + " will be shown here.";
-            document.getElementById("banashwor-price").innerText = "Price in Banashwor: Rs " + bPrice;
-            document.getElementById("koteshwor-price").innerText = "Price in Koteshwor: Rs " + kPrice;
+            document.getElementById("banashwor-price").innerText = "Average Price in Banashwor: Rs " + bPrice;
+            document.getElementById("koteshwor-price").innerText = "Average Price in Koteshwor: Rs " + kPrice;
             document.getElementById("popup-image").src = imageUrl;
             overlay.addEventListener('click', hidePopup);
         }

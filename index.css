@@ -120,6 +120,9 @@ header button:hover {
       color: white;
       margin-bottom: 10px;
   }
+  .hero h1{
+    margin-left: 50px;
+  }
   .hero button{
       color: white;
       background-color: transparent;
