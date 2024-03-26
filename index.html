@@ -6,16 +6,14 @@
     <title>Home</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
 </head>
 <body>
 
     <header>
-        
         <div class="logo">
             <img class="Image" src="Image/Logo.png">
-          </div>
-
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
@@ -27,110 +25,102 @@
         </nav>
         <div id="Account" class="btn">
             <button onclick="button()" class="logout"><i class="fa-solid fa-user"></i> logout</button>
-            </div>
-        <div id="myModal" class="btn">
-        <a class="Login" href="signin.html"><button><i class="fa-solid fa-arrow-right-to-bracket"></i> Sign in</button></a>
-        <a class="Logup" href="signup.html"><button><i class="fa-solid fa-arrow-right-to-bracket fa-flip-horizontal"></i> Sign up</button></a>
         </div>
-
+        <div id="myModal" class="btn">
+            <a class="Login" href="signin.html"><button><i class="fa-solid fa-arrow-right-to-bracket"></i> Sign in</button></a>
+            <a class="Logup" href="signup.html"><button><i class="fa-solid fa-arrow-right-to-bracket fa-flip-horizontal"></i> Sign up</button></a>
+        </div>
     </header>
     
     <div class="back">
-            <div class="hero">
-           <h1>Search Nearby Street Market</h1>
+        <div class="hero">
+            <h1>Search Nearby Street Market</h1>
             <div class="market">
                 <p>Street Market Name:</p>
                 <input type="text" id="name" name="name" placeholder="Enter the Market Name">
             </div>
-            <a href="location.html">
-            <button>Find</button></a>
+            <a href="location.html"><button>Find</button></a>
         </div>
     </div>
 
-
-<div class="titl">
-    <h1 id="nicetry">Product</h1>
-</div>
+    <div class="titl">
+        <h1 id="nicetry">Product</h1>
+    </div>
 
     <div class="overal">
-      <div class="selection">
-        
         <div class="pineapple">
-         <div class="okay">
-            <h3>Pineapple</h3>
-                <img src="Image/Pineapple.png" width="200px" height="200px" alt="">
-                <p>Rs:125/kg</p>
-         </div>
+            <div class="okay">
+                <h3>Pineapple</h3>
+                <img src="Image/Pineapple.png" alt="">
+                <p>Rs: 125/kg</p>
+            </div>
         </div>
         <div class="pineapple">
             <div class="okay">
                 <h3>Girl Dress</h3>
-                   <img src="Image/pink.png" width="200px" height="200px" alt="">
-                   <p>Rs:700</p>
+                <img src="Image/pink.png" alt="">
+                <p>Rs: 700</p>
             </div>
-           </div>
-           <div class="pineapple">
+        </div>
+        <div class="pineapple">
             <div class="okay">
                 <h3>Jacket</h3>
-                   <img src="Image/jacket.png" width="200px" height="200px" alt="">
-                   <p>Rs:900 </p>   
+                <img src="Image/jacket.png" alt="">
+                <p>Rs: 900 </p>   
             </div>
-           </div>
-           </div>
-           <a href="product.html">
-           <button>More</button></a>
-           </div>
+        </div>
+    </div>
+    <div class="more">
+    <a href="product.html"><button>Find</button></a>
 
+    </div>
+    
 
-           <div class="chotu">
-           <H1>What We Do?</H1>
-           <div class="wedo">
-             <div class="we">
-               <div class="direction">
-                <nice>
-                 <p>Navigate the market</p>
-                       <img src="Image/navigation.png" width="200px" height="200px" alt="">
-                       <img src="Image/man.png"width="150px" height="100px" alt="">
-                       </nice>
-          </div>
-          <div class="direction">
-            <nice>
-             <p>Navigate the Parking</p>
-                   <img src="Image/navigation.png" width="200px" height="200px" alt="">
-                   <img src="Image/car.png"width="150px" height="100px" alt="">
-                   </nice>
-      </div>
-      <div class="direction">
-        <nice>
-         <p>Make Shopping Easier</p>
-               <img src="Image/navigation.png" width="200px" height="200px" alt="">
-               <img src="Image/peoples.png"width="150px" height="100px" alt="">
-               </nice>
-       </div>
-      </div>
-     </div>
+    <div class="titl">
+        <h1 id="nicetry">What We Do?</h1>
+    </div>
+   
+        <div class="chotu">
+                <div class="direction">
+                    <nice>
+                        <p>Navigate the market</p>
+                        <img src="Image/navigation.png" alt="">
+                        <img id="man" src="Image/man.png" alt="">
+                    </nice>
+                </div>
+                <div class="direction">
+                    <nice>
+                        <p>Navigate the Parking</p>
+                        <img src="Image/navigation.png" alt="">
+                        <img src="Image/car.png" alt="">
+                    </nice>
+                </div>
+                <div class="direction">
+                    <nice>
+                        <p>Make Shopping Easier</p>
+                        <img src="Image/navigation.png" alt="">
+                        <img src="Image/peoples.png" alt="">
+                    </nice>
+                </div>
     </div>  
 
     <script>
-        
-var success = localStorage.getItem('Status');
-var modal = document.getElementById("myModal");
-var bb = document.getElementById("Account");
-if (success === "true") { // <-- Check against string "true"
-    modal.style.display = "none";
-    bb.style.display = ""; // Show the button
-} else {
-    modal.style.display = ""; // Show the modal
-    bb.style.display = "none"; // Hide the button
-}
+        var success = localStorage.getItem('Status');
+        var modal = document.getElementById("myModal");
+        var bb = document.getElementById("Account");
+        if (success === "true") { // <-- Check against string "true"
+            modal.style.display = "none";
+            bb.style.display = ""; // Show the button
+        } else {
+            modal.style.display = ""; // Show the modal
+            bb.style.display = "none"; // Hide the button
+        }
 
-
-function button(){
-    localStorage.setItem("Status", "false");
-    window.location.reload();
-
-}
-
+        function button(){
+            localStorage.setItem("Status", "false");
+            window.location.reload();
+        }
     </script>
 </body>
 </html>
+

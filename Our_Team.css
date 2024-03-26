@@ -122,3 +122,29 @@ header button:hover {
   font-weight: 700;
 }
 
+.member {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  
+}
+
+.member img {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 100%;
+  object-fit: contain; 
+  }
+
+.member p {
+  text-align: center;
+  color: aliceblue;
+  position: relative;
+  margin-top: 130px;
+  z-index: 2; /* Ensure the text appears above the image */
+}
+
+
+
+
