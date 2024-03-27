@@ -83,6 +83,7 @@ header button:hover {
 
 .team-details1,
 .team-details2 {
+
   height: 361px;
   width: 100%;
   background-color: none;
@@ -145,6 +146,10 @@ header button:hover {
   z-index: 2; /* Ensure the text appears above the image */
 }
 
-
+h1{
+  margin-bottom: -120px;
+  color: aliceblue;
+  text-align: center;
+}
 
 
