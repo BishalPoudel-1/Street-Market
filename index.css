@@ -146,7 +146,6 @@ input:hover{
   border-color: #0008ff;
 }
 input::placeholder{
-  margin-left: 100px;
   font-weight: bold;
   color: #000000;
 }
