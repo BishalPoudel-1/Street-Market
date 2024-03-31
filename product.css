@@ -69,6 +69,19 @@ body{
   margin-right: 40px;
 }
 
+@media only screen and (max-width: 655px) {
+  .popup{
+    width: 95%;
+    height:auto; /* Adjusted width for smaller screens */
+    padding: 20px; 
+    background-color: #ffffff;
+    border-radius: 12px;
+  }
+ 
+
+}
+  
+
 
 
 
@@ -210,6 +223,45 @@ header button:hover {
   color: #f6f6f6;
   font-family: "Open Sans", sans-serif;
 }
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 534px) {
+  .search {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.search h1 {
+    margin: 0 0 10px 0;
+}
+
+.search input {
+    margin: 0;
+}
+
+.search button {
+    margin-top: 10px;
+}
+.filter {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.filter label {
+  margin: 0 0 10px 0;
+}
+
+.filter select {
+  margin: 0;
+}
+
+.filter button {
+  margin-top: 10px;
+
+}
+}
+
+
 
 
 /* filter*/

@@ -9,6 +9,7 @@
 }
 body{
     background-color: rgb(12, 12, 12);
+    margin:0;
 }
 
 
@@ -85,56 +86,88 @@ header button:hover {
 }
 }
 
-
-
 .map-container {
+    margin-top: 32px;
     border-radius: 12px;
-    height: 600px; /* Adjust height as needed */
-    width: 800px; /* Adjust width as needed */
+    height: 60vh; /* 60% of the viewport height */
+    width: 80vw; /* 80% of the viewport width */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative; /* Change position to relative */
+    margin-left: 10%;
     background-color: rgba(43, 42, 42, 0.551);
 }
 
 .loc {
     position: absolute;
-    top: 30px;
-    
+    height: 65%; /* 65% of the map container */
+    width: 70%; /* 70% of the map container */
+     
+}
+
+iframe {
+    border-radius: 3%;
+    width: 100%;
+    height: 100%;
 }
 
 .icons {
+    display: flex;
     position: absolute;
-    bottom: 1%;
-    left: 30%;
-    transform: translateX(-50%);
-    padding: 1px; /* Add padding for better readability */
-    border-radius: 4px; /* Add border-radius for rounded corners */
-    color: #ffffff; /* Set text color */
-    font-family: Arial, sans-serif; /* Set font family */
-    font-size: 16px; /* Set font size */
-     /* Align text to the center */
-     font-weight: bold;
+    bottom: 2%; /* Adjust based on preference */
+    padding: 10px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-
-iframe{
-    border-radius: 3%;
-    
+.icons p1 {
+    margin-right: 52px;
 }
+
 #head {
     position: absolute;
-    top: 120px;
-    left: 400px;
-    background-color: #ffffff00;
-    color: #fff; /* Set text color */
+    top: 1%;
+    color: #ffffff;
     padding: 10px;
 }
 
+@media only screen and (min-width: 1024px) {
+    .map-container {
+        width: 60vw; /* 60% of the viewport width */
+        margin-left: 20%; /* Increase the left margin */
+    }
 
+    .loc {
+        height: 70%; /* Adjusted height */
+        width: 60%; /* Adjusted width */
+        left: 20%; /* Adjusted left position */
+    }
+
+    #head {
+        left: 35%; /* Adjusted left position */
+    }
+}
+
+
+@media only screen and (max-width: 405px) {
+.icons{
+    display: flex;
+    flex-direction: row;
+    top: 90%;
+    right: 0;
+    left: 0;
+    margin-left: 2px;
+    margin-right: 2px;
+    transform: translateY(-80%);
+    font-size: small;
+    font-weight: 100px;
+
+}
+.icons p1 {
+    margin-right: 5px;
+}
+}

@@ -17,8 +17,8 @@
         <nav>
             <ul>
                 <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="location.html"><i class="fa-solid fa-location-dot"></i> Location</a></li>
-                <li><a href="product.html"><i class="fa-solid fa-store"></i> Product</a></li>
+                <li onclick="locations()"><a><i class="fa-solid fa-location-dot"></i> Location</a></li>
+                <li onclick="product()"><a><i class="fa-solid fa-store"></i> Product</a></li>
                 <li><a href="Our_Team.html"><i class="fa-solid fa-people-group"></i> Our team</a></li>
                 <li><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact us</a></li>
             </ul>
@@ -71,7 +71,7 @@
         </div>
     </div>
     <div class="more">
-    <a href="product.html"><button>More</button></a>
+    <button onclick="product()">More</button>
 
     </div>
     
@@ -116,10 +116,38 @@
             bb.style.display = "none"; // Hide the button
         }
 
+        
         function button(){
             localStorage.setItem("Status", "false");
             window.location.reload();
         }
+
+        function product(){
+            if (success === "false") { // <-- Check against string "true"
+            alert("Login First")
+            window.location.href = "signin.html";
+
+        }
+        else{
+            window.location.href="product.html";
+        }
+        }
+
+        
+        function locations(){
+            var success = localStorage.getItem('Status');
+            if (success === "false") { // <-- Check against string "true"
+            alert("Login First")
+            window.location.href = "signin.html";
+
+        }
+        else{
+            window.location.href="location.html";
+        }
+        }
+
+
+        
     </script>
 </body>
 </html>

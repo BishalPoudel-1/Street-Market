@@ -18,7 +18,7 @@
             height: 620px;
             width: 620px;
             transform: translate(-50%, -50%);
-            background-color: #f9f9f9;
+            background-color: #ffffff;
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -75,7 +75,7 @@
         <input type="text" placeholder="Search the products" id="input">
         <button id="btn"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
         <button id="cart-btn" style="position: relative;"><i class="fa-solid fa-cart-shopping"></i></button>
-
+    </div>
         <div id="cart-container" class="cart-popup">
             <div class="cart-content">
                 <span class="close" onclick="toggleCart()">&times;</span>
@@ -84,7 +84,6 @@
                 </div>
             </div>
         </div>
-    </div>
 
 
 
@@ -384,6 +383,8 @@
 
 
         <script>
+
+
         // Function to toggle cart visibility and show as a popup
         function toggleCart() {
             const cartContainer = document.getElementById('cart-container');
@@ -492,6 +493,10 @@ function button(){
     window.location.reload();
 
 }
+if (success === "false" ) { // <-- Check against string "false"
+    alert("Login First");
+    window.location.href = "signin.html";
+     }
 
 
         

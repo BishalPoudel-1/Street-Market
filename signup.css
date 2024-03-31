@@ -91,7 +91,7 @@ header button:hover {
     overflow: hidden;
 }
 
-body .container .pic img {
+.pic img {
     position: absolute;
     right: 2%;
     top: 4%;
@@ -198,4 +198,28 @@ p a{
 a:hover{
     color: #162D3A;
 }
+@media screen and (max-width: 520px) {
+    .pic {
+        justify-content: center; /* Center content horizontally */
+        padding: 20px; /* Add padding for better spacing */
+    }
 
+    .pic img {
+        top: 80px;
+        width: 50%; /* Set the image width to 50% of its container */
+        height: auto; /* Allow the height to adjust proportionally */
+        max-width: 100%; /* Ensure the image doesn't exceed the container width */
+        border-radius: 10; /* Reset border-radius */
+    }
+    .pic h2 {
+        position: absolute; /* Position the element relative to its nearest positioned ancestor */
+        left: 70px; /* Set the distance from the left edge of the container */
+        top: -3px; /* Set the distance from the top edge of the container */
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    .all{
+        top: 29px;
+    }
+}

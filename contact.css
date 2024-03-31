@@ -80,8 +80,9 @@ header button:hover {
 }
 
 
-body .container {  
+ .container {  
     background-image: url('Image/contact.png');
+    background-size: cover;
     background-size: 100% 100%; /* Fit the entire background image inside the container */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     margin-right: auto;
@@ -158,6 +159,34 @@ h1{
 
 }
 
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        
+    }
+    .container h4{
+        position: absolute;
+        top: 85%;
+        right: 0;
+        left: 0;
+        margin-left: 22px;
+        margin-right: 12px;
+        transform: translateY(-80%);
+        font-size: medium;
+    }
+    form {
+        margin-left: 15%;
+        padding: 15px;
+    }
+    .all {
+        
+        text-align: center; /* Center align text */
+    }
+}
 
 
 
