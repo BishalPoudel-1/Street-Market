@@ -58,10 +58,12 @@ To run the project locally:
 ## 📸 Screenshots
 
 ## Home page
-![homw](https://github.com/user-attachments/assets/ee9414d9-b24a-4317-b799-664d60f1d754)
+
+![homw](https://github.com/user-attachments/assets/b85276e3-6b29-4032-9433-a68cae641466)
+
+
 
 ## Product Page
-![product](https://github.com/user-attachments/assets/0eebba64-e3a9-4a6a-adf9-fd36804a088c)
 
-
+![product](https://github.com/user-attachments/assets/d2aab6d9-c9fa-44f8-b0a1-729a783f6cfa)
 
