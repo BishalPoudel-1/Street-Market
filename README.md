@@ -1,8 +1,5 @@
-Thanks! Based on your updated project structure from the **Street-Market-main** folder, here’s a tailored `README.md` you can use for your GitHub repository:
 
----
-
-# 🛒 Street Market – Front-End Web Project
+### 🛒 Street Market – Front-End Web Project
 
 A fully static web project that showcases a local **street market platform**, where users can explore products, learn about the team, find location details, and interact through sign-up and sign-in pages. Built with HTML, CSS, and JavaScript, this project is ideal for portfolio presentation or as a UI prototype for future development.
 
